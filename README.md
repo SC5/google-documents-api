@@ -56,6 +56,11 @@ Fetch Google Document as HTML
 * @param  {String} id - Document id
 * @return {String}    - Document content as HTML (root element is <html>)
 
+If you intend to display document contents as part of app/site,
+observe that the returned string is full-page HTML.  Therefore is
+recommended to wrap it up in iframe to encapsulate styles and avoid
+the doc and your app/site from breaking each other.
+
 ## License
 
 MIT
