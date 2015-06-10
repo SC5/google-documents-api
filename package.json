@@ -1,0 +1,34 @@
+{
+  "name": "google-documents-api",
+  "version": "0.1.0",
+  "description": "Unofficial Google Documents node API",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "keywords": [
+    "google",
+    "documents",
+    "node",
+    "googleapis"
+  ],
+  "author": "SC5",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/SC5/google-documents-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SC5/google-documents-api/issues"
+  },
+  "dependencies": {
+    "google-sheets-api": "terotil/google-sheets-api"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jasmine": "^2.0.1",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "polyfill-promise": "^4.0.0",
+    "proxyquire": "^1.5.0"
+  }
+}
