@@ -8,38 +8,36 @@ etc. not supported) in your node app.
 
 ## Usage
 
-1.  Install module
-
-    ```shell
-    npm install google-documents-api
-    ```
-
-2.  Obtain service auth credentials.  Follow steps 2-7 in
-    [google-sheets-api usage instructions](https://github.com/SC5/google-sheets-api#usage).
-3.  Authorize your service email address (obtained in previous step)
-    to read the document.
-4.  Collect the document id from URL.
-    `https://docs.google.com/document/d/THIS_IS_THE_DOCUMENT_ID/edit`
+1. Install module
+   ```shell
+   npm install google-documents-api
+   ```
+2. Obtain service auth credentials.  Follow steps 2-7 in
+   [google-sheets-api usage instructions](https://github.com/SC5/google-sheets-api#usage).
+3. Authorize your service email address (obtained in previous step)
+   to read the document.
+4. Collect the document id from URL.
+   `https://docs.google.com/document/d/THIS_IS_THE_DOCUMENT_ID/edit`
 
 Now you are ready to go.
 
-    ```javascript
-    var fs = require('fs');
-    var Documents = require('google-documents-api');
+```javascript
+var fs = require('fs');
+var Documents = require('google-documents-api');
 
-    var documentId = 'your-document-id';
-    var serviceEmail = 'generated-by-dev-console@developer.gserviceaccount.com';
-    var serviceKey = fs.readFileSync('path/to/your/sheets.pem').toString();
+var documentId = 'your-document-id';
+var serviceEmail = 'generated-by-dev-console@developer.gserviceaccount.com';
+var serviceKey = fs.readFileSync('path/to/your/sheets.pem').toString();
 
-    var docs = new Documents({ email: serviceEmail, key: serviceKey });
+var docs = new Documents({ email: serviceEmail, key: serviceKey });
 
-    docs.getDocumentHtml(documentId).then(function(htmlContent) {
-      console.log(htmlContent);
-    })
-    .catch(function(err){
-      console.error(err, 'Failed to read document');
-    });
-    ```
+docs.getDocumentHtml(documentId).then(function(htmlContent) {
+  console.log(htmlContent);
+})
+.catch(function(err){
+  console.error(err, 'Failed to read document');
+});
+```
 
 ## API
 
