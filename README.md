@@ -1,5 +1,7 @@
 # google-documents-api
 
+[![Build Status](https://travis-ci.org/SC5/google-documents-api.svg?branch=master)](https://travis-ci.org/SC5/google-documents-api)
+
 Unofficial Google Documents node API.  Read data from Google Document
 (only the word processor documents, Google Spreadsheet, Presentation,
 etc. not supported) in your node app.
