@@ -1,6 +1,6 @@
 {
   "name": "google-documents-api",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Unofficial Google Documents node API",
   "main": "lib/index.js",
   "scripts": {
