@@ -22,7 +22,7 @@
     "url": "https://github.com/SC5/google-documents-api/issues"
   },
   "dependencies": {
-    "google-sheets-api": "terotil/google-sheets-api"
+    "google-sheets-api": "^0.4.0"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
